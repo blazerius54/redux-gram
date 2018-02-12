@@ -1,0 +1,96 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.App a {
+  color: rgb(14, 78, 131);
+  text-decoration: none;
+}
+
+.photo-grid {  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.single-photo{
+  flex-basis: 5%;
+  flex-grow: 1; 
+  margin: 0 2rem 2rem 2rem;
+  padding: 2rem;
+  border: 1px solid lightgray;
+  background: white;
+  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.single-photo img {
+  max-width: 300px;
+}
+
+.single-photo figcaption {
+  display: flex;
+  flex-direction: column;  
+}
+
+.single-photo .btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container {
+  position: relative;
+}
+
+.likes {
+  background: url(http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png) center no-repeat;
+  background-size: contain;
+  height:100%;
+  font-size: 2rem;
+  /* padding: 1rem; */
+  /* position: absolute; */
+  color: blue;
+  /* left: 0%; */
+  /* bottom: 10%; */
+  /* pointer-events: none; */
+}
+
+.single-photo-comments {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+}
+
+.comments-container {
+  margin: 0 auto;
+}
+
+.comment-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.user {
+  font-weight: 800
+}
+
+.comment-text {
+  margin-left: 10px;
+}
+
+.remove-comment {
+  background: none;
+  border: 0;
+  line-height: 1;
+  opacity: 1;
+}
